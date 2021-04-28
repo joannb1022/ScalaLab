@@ -1,0 +1,744 @@
+INFO  time: initialize in 0.43s
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: /home/asia/studia/scala - laboratoria/laboratoria2/Vec.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/laboratoria2/VecPrivate.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/laboratoria2/Lab2Bean.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/laboratoria2/Lab2.scala
+INFO  no build target: using presentation compiler with only scala-library
+kwi 16, 2021 12:51:29 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "workspace/didChangeWatchedFiles",
+  "params": {
+    "changes": [
+      {
+        "uri": "file:///home/asia/studia/scala%20-%20laboratoria/laboratoria2/JavaAppl.java",
+        "type": 3
+      }
+    ]
+  }
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:192)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.nio.file.NoSuchFileException: /home/asia/studia/scala - laboratoria/laboratoria2/JavaAppl.java
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:219)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:371)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:422)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3206)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:45)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:24)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$onChange$1(MetalsLanguageServer.scala:725)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$onChange$1$adapted(MetalsLanguageServer.scala:724)
+	at scala.collection.immutable.Stream.foreach(Stream.scala:533)
+	at scala.meta.internal.metals.MetalsLanguageServer.onChange(MetalsLanguageServer.scala:724)
+	at scala.meta.internal.metals.MetalsLanguageServer.didChangeWatchedFiles(MetalsLanguageServer.scala:689)
+	... 16 more
+
+kwi 16, 2021 12:51:30 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "workspace/didChangeWatchedFiles",
+  "params": {
+    "changes": [
+      {
+        "uri": "file:///home/asia/studia/scala%20-%20laboratoria/laboratoria2/Person.java",
+        "type": 3
+      }
+    ]
+  }
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:192)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.nio.file.NoSuchFileException: /home/asia/studia/scala - laboratoria/laboratoria2/Person.java
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:219)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:371)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:422)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3206)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:45)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:24)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$onChange$1(MetalsLanguageServer.scala:725)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$onChange$1$adapted(MetalsLanguageServer.scala:724)
+	at scala.collection.immutable.Stream.foreach(Stream.scala:533)
+	at scala.meta.internal.metals.MetalsLanguageServer.onChange(MetalsLanguageServer.scala:724)
+	at scala.meta.internal.metals.MetalsLanguageServer.didChangeWatchedFiles(MetalsLanguageServer.scala:689)
+	... 16 more
+
+INFO  shutting down Metals
+INFO  time: initialize in 0.35s
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: /home/asia/studia/scala - laboratoria/laboratoria2/Vec.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/laboratoria2/VecPrivate.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/laboratoria2/Lab2Bean.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/laboratoria2/Lab2.scala
+INFO  no build target: using presentation compiler with only scala-library
+INFO  shutting down Metals
+INFO  time: initialize in 0.71s
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: /home/asia/studia/scala - laboratoria/laboratoria2/Vec.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/laboratoria2/VecPrivate.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/laboratoria2/Lab2Bean.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/laboratoria2/Lab2.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab2/Vec.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab2/VecPrivate.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab2/Lab2Bean.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab2/Lab2.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/FRaction.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/FRaction.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/FRaction.scala
+WARN  no build target: 
+INFO  no build target: using presentation compiler with only scala-library
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/Fraction.scala
+kwi 16, 2021 3:06:58 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "workspace/didChangeWatchedFiles",
+  "params": {
+    "changes": [
+      {
+        "uri": "file:///home/asia/studia/scala%20-%20laboratoria/lab3/FRaction.scala",
+        "type": 3
+      },
+      {
+        "uri": "file:///home/asia/studia/scala%20-%20laboratoria/lab3/Fraction.scala",
+        "type": 1
+      }
+    ]
+  }
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:192)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.nio.file.NoSuchFileException: /home/asia/studia/scala - laboratoria/lab3/FRaction.scala
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:219)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:371)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:422)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3206)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:45)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:24)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$onChange$1(MetalsLanguageServer.scala:725)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$onChange$1$adapted(MetalsLanguageServer.scala:724)
+	at scala.collection.immutable.Stream.foreach(Stream.scala:533)
+	at scala.meta.internal.metals.MetalsLanguageServer.onChange(MetalsLanguageServer.scala:724)
+	at scala.meta.internal.metals.MetalsLanguageServer.didChangeWatchedFiles(MetalsLanguageServer.scala:689)
+	... 16 more
+
+kwi 16, 2021 3:10:44 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 48
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/Fraction.scala
+WARN  no build target: 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/Fraction.scala
+WARN  no build target: 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/Fraction.scala
+WARN  no build target: 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/Fraction.scala
+WARN  no build target: 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/Fraction.scala
+WARN  no build target: 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/Fraction.scala
+WARN  no build target: 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/Fraction.scala
+WARN  no build target: 
+INFO  time: initialize in 0.46s
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab2/Vec.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab2/VecPrivate.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/Fraction.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab2/Lab2Bean.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab2/Lab2.scala
+INFO  time: initialize in 0.37s
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab2/Vec.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab2/VecPrivate.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/Fraction.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab2/Lab2Bean.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab2/Lab2.scala
+INFO  time: initialize in 0.41s
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab2/Vec.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab2/VecPrivate.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/Fraction.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab2/Lab2Bean.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab2/Lab2.scala
+INFO  time: initialize in 1.14s
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab2/Vec.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab2/VecPrivate.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/Fraction.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab2/Lab2Bean.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab2/Lab2.scala
+INFO  shutting down Metals
+INFO  time: initialize in 0.33s
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab2/Vec.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab2/VecPrivate.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/Fraction.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab2/Lab2Bean.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab2/Lab2.scala
+INFO  no build target: using presentation compiler with only scala-library
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/Fraction.scala
+WARN  no build target: 
+kwi 28, 2021 8:12:56 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 111
+kwi 28, 2021 8:14:18 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 166
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/Fraction.scala
+WARN  no build target: 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/Fraction.scala
+WARN  no build target: 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/Fraction.scala
+WARN  no build target: 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/Fraction.scala
+WARN  no build target: 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/Fraction.scala
+WARN  no build target: 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/main.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/main.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/main.scala
+WARN  no build target: 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/main.scala
+WARN  no build target: 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/main.scala
+WARN  no build target: 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/main.scala
+WARN  no build target: 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/main.scala
+WARN  no build target: 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/main.scala
+WARN  no build target: 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/main.scala
+WARN  no build target: 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/main.scala
+WARN  no build target: 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/main.scala
+WARN  no build target: 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/main.scala
+WARN  no build target: 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/main.scala
+WARN  no build target: 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+kwi 28, 2021 8:50:02 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:37)
+
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/main.scala
+WARN  no build target: 
+something's wrong: no file:///home/asia/studia/scala%20-%20laboratoria/lab3/main.scala in Array[String]RangePosition(file:///home/asia/studia/scala%20-%20laboratoria/lab3/main.scala, 1190, 1190, 1203)
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/main.scala
+WARN  no build target: 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/main.scala
+WARN  no build target: 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/file1.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/file1.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/file1.scala
+WARN  no build target: 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/file1.scala
+WARN  no build target: 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/file1.scala
+WARN  no build target: 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/main.scala
+WARN  no build target: 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/file1.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/file1.scala
+WARN  no build target: 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/file1.scala
+WARN  no build target: 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/file1.scala
+WARN  no build target: 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/main.scala
+WARN  no build target: 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+kwi 28, 2021 8:58:43 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:37)
+
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/main.scala
+WARN  no build target: 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/p1/package.scala
+  /home/asia/studia/scala - laboratoria/lab3/p1/package.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/p1/package.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/p1/package.scala
+WARN  no build target: 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/main.scala
+WARN  no build target: 
+kwi 28, 2021 9:04:05 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "workspace/didChangeWatchedFiles",
+  "params": {
+    "changes": [
+      {
+        "uri": "file:///home/asia/studia/scala%20-%20laboratoria/lab3/file1.scala",
+        "type": 3
+      },
+      {
+        "uri": "file:///home/asia/studia/scala%20-%20laboratoria/lab3/1-4/file1.scala",
+        "type": 1
+      },
+      {
+        "uri": "file:///home/asia/studia/scala%20-%20laboratoria/lab3/Fraction.scala",
+        "type": 3
+      },
+      {
+        "uri": "file:///home/asia/studia/scala%20-%20laboratoria/lab3/Fraction.scala",
+        "type": 1
+      }
+    ]
+  }
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:192)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.nio.file.NoSuchFileException: /home/asia/studia/scala - laboratoria/lab3/file1.scala
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:219)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:371)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:422)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3206)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:45)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:24)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$onChange$1(MetalsLanguageServer.scala:725)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$onChange$1$adapted(MetalsLanguageServer.scala:724)
+	at scala.collection.immutable.Stream.foreach(Stream.scala:533)
+	at scala.meta.internal.metals.MetalsLanguageServer.onChange(MetalsLanguageServer.scala:724)
+	at scala.meta.internal.metals.MetalsLanguageServer.didChangeWatchedFiles(MetalsLanguageServer.scala:689)
+	... 15 more
+
+kwi 28, 2021 9:04:05 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "workspace/didChangeWatchedFiles",
+  "params": {
+    "changes": [
+      {
+        "uri": "file:///home/asia/studia/scala%20-%20laboratoria/lab3/main.scala",
+        "type": 3
+      },
+      {
+        "uri": "file:///home/asia/studia/scala%20-%20laboratoria/lab3/1-4/main.scala",
+        "type": 1
+      }
+    ]
+  }
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:192)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.nio.file.NoSuchFileException: /home/asia/studia/scala - laboratoria/lab3/main.scala
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:219)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:371)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:422)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3206)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:45)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:24)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$onChange$1(MetalsLanguageServer.scala:725)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$onChange$1$adapted(MetalsLanguageServer.scala:724)
+	at scala.collection.immutable.Stream.foreach(Stream.scala:533)
+	at scala.meta.internal.metals.MetalsLanguageServer.onChange(MetalsLanguageServer.scala:724)
+	at scala.meta.internal.metals.MetalsLanguageServer.didChangeWatchedFiles(MetalsLanguageServer.scala:689)
+	... 15 more
+
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/main.scala
+WARN  no build target: 
+kwi 28, 2021 9:05:47 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "workspace/didChangeWatchedFiles",
+  "params": {
+    "changes": [
+      {
+        "uri": "file:///home/asia/studia/scala%20-%20laboratoria/lab3/main.scala",
+        "type": 3
+      }
+    ]
+  }
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:192)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.nio.file.NoSuchFileException: /home/asia/studia/scala - laboratoria/lab3/main.scala
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:219)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:371)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:422)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3206)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:45)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:24)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$onChange$1(MetalsLanguageServer.scala:725)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$onChange$1$adapted(MetalsLanguageServer.scala:724)
+	at scala.collection.immutable.Stream.foreach(Stream.scala:533)
+	at scala.meta.internal.metals.MetalsLanguageServer.onChange(MetalsLanguageServer.scala:724)
+	at scala.meta.internal.metals.MetalsLanguageServer.didChangeWatchedFiles(MetalsLanguageServer.scala:689)
+	... 15 more
+
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/1-4/main.scala
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/1-4/main.scala
+WARN  no build target: 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+kwi 28, 2021 9:06:13 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+kwi 28, 2021 9:06:13 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: no context found for source-file:///home/asia/studia/scala%20-%20laboratoria/lab3/1-4/main.scala,line-111,offset=2032
+scala.reflect.internal.FatalError: no context found for source-file:///home/asia/studia/scala%20-%20laboratoria/lab3/1-4/main.scala,line-111,offset=2032
+	at scala.tools.nsc.interactive.CompilerControl.$anonfun$doLocateContext$1(CompilerControl.scala:100)
+	at scala.tools.nsc.interactive.CompilerControl.doLocateContext(CompilerControl.scala:100)
+	at scala.tools.nsc.interactive.CompilerControl.doLocateContext$(CompilerControl.scala:99)
+	at scala.tools.nsc.interactive.Global.doLocateContext(Global.scala:113)
+	at scala.meta.internal.pc.PcDefinitionProvider.definitionTypedTreeAt(PcDefinitionProvider.scala:94)
+	at scala.meta.internal.pc.PcDefinitionProvider.definition(PcDefinitionProvider.scala:22)
+
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/1-4/main.scala
+WARN  no build target: 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/main.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/main.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/main.scala
+WARN  no build target: 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/file1.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/file1.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/file1.scala
+WARN  no build target: 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/file1.scala
+WARN  no build target: 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/file1.scala
+WARN  no build target: 
+kwi 28, 2021 9:33:41 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 728
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/file1.scala
+WARN  no build target: 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/utils/file1.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/utils/file1.scala
+kwi 28, 2021 9:36:22 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "workspace/didChangeWatchedFiles",
+  "params": {
+    "changes": [
+      {
+        "uri": "file:///home/asia/studia/scala%20-%20laboratoria/lab3/file1.scala",
+        "type": 3
+      },
+      {
+        "uri": "file:///home/asia/studia/scala%20-%20laboratoria/lab3/file1.scala",
+        "type": 1
+      }
+    ]
+  }
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:192)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.nio.file.NoSuchFileException: /home/asia/studia/scala - laboratoria/lab3/file1.scala
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:219)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:371)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:422)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3206)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:45)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:24)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$onChange$1(MetalsLanguageServer.scala:725)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$onChange$1$adapted(MetalsLanguageServer.scala:724)
+	at scala.collection.immutable.Stream.foreach(Stream.scala:533)
+	at scala.meta.internal.metals.MetalsLanguageServer.onChange(MetalsLanguageServer.scala:724)
+	at scala.meta.internal.metals.MetalsLanguageServer.didChangeWatchedFiles(MetalsLanguageServer.scala:689)
+	... 15 more
+
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/main.scala
+WARN  no build target: 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/main.scala
+WARN  no build target: 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/main.scala
+WARN  no build target: 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/main.scala
+WARN  no build target: 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/main.scala
+WARN  no build target: 
+something's wrong: no file:///home/asia/studia/scala%20-%20laboratoria/lab3/main.scala in Array[String]RangePosition(file:///home/asia/studia/scala%20-%20laboratoria/lab3/main.scala, 708, 708, 721)
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/1-4/Fraction.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/Fraction.scala
+kwi 28, 2021 9:44:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "workspace/didChangeWatchedFiles",
+  "params": {
+    "changes": [
+      {
+        "uri": "file:///home/asia/studia/scala%20-%20laboratoria/lab3/1-4/Fraction.scala",
+        "type": 3
+      },
+      {
+        "uri": "file:///home/asia/studia/scala%20-%20laboratoria/lab3/1-4/Fraction.scala",
+        "type": 1
+      }
+    ]
+  }
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:192)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.nio.file.NoSuchFileException: /home/asia/studia/scala - laboratoria/lab3/1-4/Fraction.scala
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:219)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:371)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:422)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3206)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:45)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:24)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$onChange$1(MetalsLanguageServer.scala:725)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$onChange$1$adapted(MetalsLanguageServer.scala:724)
+	at scala.collection.immutable.Stream.foreach(Stream.scala:533)
+	at scala.meta.internal.metals.MetalsLanguageServer.onChange(MetalsLanguageServer.scala:724)
+	at scala.meta.internal.metals.MetalsLanguageServer.didChangeWatchedFiles(MetalsLanguageServer.scala:689)
+	... 15 more
+
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/fraction/Fraction.scala
+kwi 28, 2021 9:44:49 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "workspace/didChangeWatchedFiles",
+  "params": {
+    "changes": [
+      {
+        "uri": "file:///home/asia/studia/scala%20-%20laboratoria/lab3/Fraction.scala",
+        "type": 3
+      },
+      {
+        "uri": "file:///home/asia/studia/scala%20-%20laboratoria/lab3/Fraction.scala",
+        "type": 1
+      }
+    ]
+  }
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:192)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.nio.file.NoSuchFileException: /home/asia/studia/scala - laboratoria/lab3/Fraction.scala
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:219)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:371)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:422)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3206)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:45)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:24)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$onChange$1(MetalsLanguageServer.scala:725)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$onChange$1$adapted(MetalsLanguageServer.scala:724)
+	at scala.collection.immutable.Stream.foreach(Stream.scala:533)
+	at scala.meta.internal.metals.MetalsLanguageServer.onChange(MetalsLanguageServer.scala:724)
+	at scala.meta.internal.metals.MetalsLanguageServer.didChangeWatchedFiles(MetalsLanguageServer.scala:689)
+	... 15 more
+
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/main.scala
+WARN  no build target: 
