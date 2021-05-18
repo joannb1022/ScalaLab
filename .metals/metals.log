@@ -761,3 +761,419 @@ WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/enumeration/ma
 WARN  no build target: 
 WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/utils/file1.scala
 WARN  no build target: 
+INFO  shutting down Metals
+INFO  time: initialize in 0.34s
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab2/Vec.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab2/VecPrivate.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/fraction/Fraction.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/1-4/main.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/main.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/enumeration/main.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/utils/file1.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab2/Lab2Bean.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab2/Lab2.scala
+INFO  shutting down Metals
+INFO  time: initialize in 0.43s
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab2/Vec.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab2/VecPrivate.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/fraction/Fraction.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/1-4/main.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/main.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/enumeration/main.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/utils/file1.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab2/Lab2Bean.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab2/Lab2.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/1-4/file1.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab4/lab4.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab4/lab4.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab4/lab4.scala
+WARN  no build target: 
+INFO  no build target: using presentation compiler with only scala-library
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab4/main.scala
+maj 12, 2021 9:41:41 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "workspace/didChangeWatchedFiles",
+  "params": {
+    "changes": [
+      {
+        "uri": "file:///home/asia/studia/scala%20-%20laboratoria/lab4/lab4.scala",
+        "type": 3
+      },
+      {
+        "uri": "file:///home/asia/studia/scala%20-%20laboratoria/lab4/main.scala",
+        "type": 1
+      }
+    ]
+  }
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:192)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.nio.file.NoSuchFileException: /home/asia/studia/scala - laboratoria/lab4/lab4.scala
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:219)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:371)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:422)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3206)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:45)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:24)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$onChange$1(MetalsLanguageServer.scala:725)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$onChange$1$adapted(MetalsLanguageServer.scala:724)
+	at scala.collection.immutable.Stream.foreach(Stream.scala:533)
+	at scala.meta.internal.metals.MetalsLanguageServer.onChange(MetalsLanguageServer.scala:724)
+	at scala.meta.internal.metals.MetalsLanguageServer.didChangeWatchedFiles(MetalsLanguageServer.scala:689)
+	... 16 more
+
+something's wrong: no file:///home/asia/studia/scala%20-%20laboratoria/lab4/main.scala in Array[String]RangePosition(file:///home/asia/studia/scala%20-%20laboratoria/lab4/main.scala, 225, 225, 238)
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab4/main.scala
+WARN  no build target: 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab4/main.scala
+WARN  no build target: 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab4/main.scala
+WARN  no build target: 
+INFO  time: initialize in 0.88s
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab2/Vec.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab2/VecPrivate.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/fraction/Fraction.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/1-4/main.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/main.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab4/main.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/enumeration/main.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/utils/file1.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab2/Lab2Bean.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab2/Lab2.scala
+INFO  no build target: using presentation compiler with only scala-library
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab4/main.scala
+WARN  no build target: 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab4/main.scala
+WARN  no build target: 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab4/main.scala
+WARN  no build target: 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab4/main.scala
+WARN  no build target: 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab4/main.scala
+WARN  no build target: 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab4/equals/main.scala
+maj 13, 2021 9:40:10 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "workspace/didChangeWatchedFiles",
+  "params": {
+    "changes": [
+      {
+        "uri": "file:///home/asia/studia/scala%20-%20laboratoria/lab4/main.scala",
+        "type": 3
+      },
+      {
+        "uri": "file:///home/asia/studia/scala%20-%20laboratoria/lab4/main.scala",
+        "type": 1
+      }
+    ]
+  }
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:192)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.nio.file.NoSuchFileException: /home/asia/studia/scala - laboratoria/lab4/main.scala
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:219)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:371)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:422)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3206)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:45)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:24)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$onChange$1(MetalsLanguageServer.scala:725)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$onChange$1$adapted(MetalsLanguageServer.scala:724)
+	at scala.collection.immutable.Stream.foreach(Stream.scala:533)
+	at scala.meta.internal.metals.MetalsLanguageServer.onChange(MetalsLanguageServer.scala:724)
+	at scala.meta.internal.metals.MetalsLanguageServer.didChangeWatchedFiles(MetalsLanguageServer.scala:689)
+	... 16 more
+
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab4/main.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab4/main.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab4/main.scala
+WARN  no build target: 
+something's wrong: no file:///home/asia/studia/scala%20-%20laboratoria/lab4/main.scala in Array[String]RangePosition(file:///home/asia/studia/scala%20-%20laboratoria/lab4/main.scala, 970, 970, 983)
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab4/main.scala
+WARN  no build target: 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+maj 13, 2021 9:43:00 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:37)
+
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab4/main.scala
+WARN  no build target: 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab4/main.scala
+WARN  no build target: 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab4/case classes/main.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab4/case classes/main.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab4/case classes/main.scala
+WARN  no build target: 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab4/case classes/main.scala
+WARN  no build target: 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+maj 13, 2021 9:52:25 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab4/case classes/main.scala
+WARN  no build target: 
+maj 13, 2021 9:52:25 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: no context found for source-file:///home/asia/studia/scala%20-%20laboratoria/lab4/case%20classes/main.scala,line-2,offset=30
+scala.reflect.internal.FatalError: no context found for source-file:///home/asia/studia/scala%20-%20laboratoria/lab4/case%20classes/main.scala,line-2,offset=30
+	at scala.tools.nsc.interactive.CompilerControl.$anonfun$doLocateContext$1(CompilerControl.scala:100)
+	at scala.tools.nsc.interactive.CompilerControl.doLocateContext(CompilerControl.scala:100)
+	at scala.tools.nsc.interactive.CompilerControl.doLocateContext$(CompilerControl.scala:99)
+	at scala.tools.nsc.interactive.Global.doLocateContext(Global.scala:113)
+	at scala.meta.internal.pc.PcDefinitionProvider.definitionTypedTreeAt(PcDefinitionProvider.scala:94)
+	at scala.meta.internal.pc.PcDefinitionProvider.definition(PcDefinitionProvider.scala:22)
+
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+maj 13, 2021 9:53:10 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab4/case classes/main.scala
+maj 13, 2021 9:53:11 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: no context found for source-file:///home/asia/studia/scala%20-%20laboratoria/lab4/case%20classes/main.scala,line-4,offset=64
+scala.reflect.internal.FatalError: no context found for source-file:///home/asia/studia/scala%20-%20laboratoria/lab4/case%20classes/main.scala,line-4,offset=64
+	at scala.tools.nsc.interactive.CompilerControl.$anonfun$doLocateContext$1(CompilerControl.scala:100)
+	at scala.tools.nsc.interactive.CompilerControl.doLocateContext(CompilerControl.scala:100)
+	at scala.tools.nsc.interactive.CompilerControl.doLocateContext$(CompilerControl.scala:99)
+	at scala.tools.nsc.interactive.Global.doLocateContext(Global.scala:113)
+	at scala.meta.internal.pc.PcDefinitionProvider.definitionTypedTreeAt(PcDefinitionProvider.scala:94)
+	at scala.meta.internal.pc.PcDefinitionProvider.definition(PcDefinitionProvider.scala:22)
+
+WARN  no build target: 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+maj 13, 2021 9:53:45 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab4/case classes/main.scala
+WARN  no build target: 
+maj 13, 2021 9:53:45 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: no context found for source-file:///home/asia/studia/scala%20-%20laboratoria/lab4/case%20classes/main.scala,line-6,offset=95
+scala.reflect.internal.FatalError: no context found for source-file:///home/asia/studia/scala%20-%20laboratoria/lab4/case%20classes/main.scala,line-6,offset=95
+	at scala.tools.nsc.interactive.CompilerControl.$anonfun$doLocateContext$1(CompilerControl.scala:100)
+	at scala.tools.nsc.interactive.CompilerControl.doLocateContext(CompilerControl.scala:100)
+	at scala.tools.nsc.interactive.CompilerControl.doLocateContext$(CompilerControl.scala:99)
+	at scala.tools.nsc.interactive.Global.doLocateContext(Global.scala:113)
+	at scala.meta.internal.pc.PcDefinitionProvider.definitionTypedTreeAt(PcDefinitionProvider.scala:94)
+	at scala.meta.internal.pc.PcDefinitionProvider.definition(PcDefinitionProvider.scala:22)
+
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab4/case classes/main.scala
+WARN  no build target: 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab4/case classes/main.scala
+WARN  no build target: 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab4/case classes/main.scala
+WARN  no build target: 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab4/case classes/main.scala
+WARN  no build target: 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab4/case classes/main.scala
+WARN  no build target: 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab4/case classes/main.scala
+WARN  no build target: 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab4/case classes/main.scala
+WARN  no build target: 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab4/case classes/main.scala
+WARN  no build target: 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab4/case classes/file1.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab4/case classes/file1.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab4/case classes/file1.scala
+WARN  no build target: 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab4/case classes/main.scala
+WARN  no build target: 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+maj 13, 2021 9:57:32 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab4/case classes/file1.scala
+WARN  no build target: 
+maj 13, 2021 9:57:32 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: no context found for source-file:///home/asia/studia/scala%20-%20laboratoria/lab4/case%20classes/file1.scala,line-3,offset=39
+scala.reflect.internal.FatalError: no context found for source-file:///home/asia/studia/scala%20-%20laboratoria/lab4/case%20classes/file1.scala,line-3,offset=39
+	at scala.tools.nsc.interactive.CompilerControl.$anonfun$doLocateContext$1(CompilerControl.scala:100)
+	at scala.tools.nsc.interactive.CompilerControl.doLocateContext(CompilerControl.scala:100)
+	at scala.tools.nsc.interactive.CompilerControl.doLocateContext$(CompilerControl.scala:99)
+	at scala.tools.nsc.interactive.Global.doLocateContext(Global.scala:113)
+	at scala.meta.internal.pc.PcDefinitionProvider.definitionTypedTreeAt(PcDefinitionProvider.scala:94)
+	at scala.meta.internal.pc.PcDefinitionProvider.definition(PcDefinitionProvider.scala:22)
+
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab4/case classes/file1.scala
+WARN  no build target: 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab4/case classes/file1.scala
+WARN  no build target: 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+maj 13, 2021 9:58:27 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+maj 13, 2021 9:58:27 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: no context found for source-file:///home/asia/studia/scala%20-%20laboratoria/lab4/case%20classes/main.scala,line-23,offset=451
+scala.reflect.internal.FatalError: no context found for source-file:///home/asia/studia/scala%20-%20laboratoria/lab4/case%20classes/main.scala,line-23,offset=451
+	at scala.tools.nsc.interactive.CompilerControl.$anonfun$doLocateContext$1(CompilerControl.scala:100)
+	at scala.tools.nsc.interactive.CompilerControl.doLocateContext(CompilerControl.scala:100)
+	at scala.tools.nsc.interactive.CompilerControl.doLocateContext$(CompilerControl.scala:99)
+	at scala.tools.nsc.interactive.Global.doLocateContext(Global.scala:113)
+	at scala.meta.internal.pc.PcDefinitionProvider.definitionTypedTreeAt(PcDefinitionProvider.scala:94)
+	at scala.meta.internal.pc.PcDefinitionProvider.definition(PcDefinitionProvider.scala:22)
+
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab4/case classes/main.scala
+WARN  no build target: 
+INFO  shutting down Metals
+INFO  time: initialize in 1.05s
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab2/Vec.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab2/VecPrivate.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/fraction/Fraction.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/1-4/main.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/main.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab4/equals/main.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab4/main.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab4/case classes/main.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab4/case classes/file1.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/utils/file1.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab2/Lab2Bean.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab2/Lab2.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab4/enumeration/main.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab4/enumeration/main.scala
+INFO  no build target: using presentation compiler with only scala-library
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+something's wrong: no file:///home/asia/studia/scala%20-%20laboratoria/lab4/case%20classes/main.scala in Array[String]RangePosition(file:///home/asia/studia/scala%20-%20laboratoria/lab4/case%20classes/main.scala, 523, 523, 536)
+INFO  time: initialize in 0.51s
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab2/Vec.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab2/VecPrivate.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/fraction/Fraction.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/1-4/main.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/main.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab4/equals/main.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab4/main.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab4/case classes/main.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab4/enumeration/main.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab4/case classes/file1.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/utils/file1.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab2/Lab2Bean.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab2/Lab2.scala
+INFO  shutting down Metals
+INFO  time: initialize in 0.42s
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab2/Vec.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab2/VecPrivate.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/fraction/Fraction.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/1-4/main.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/main.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab4/equals/main.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab4/main.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab4/case classes/main.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab4/enumeration/main.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab4/case classes/file1.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/utils/file1.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab2/Lab2Bean.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab2/Lab2.scala
+INFO  shutting down Metals
+java.util.concurrent.RejectedExecutionException: Task scala.concurrent.impl.CallbackRunnable@3d4f0596 rejected from java.util.concurrent.ThreadPoolExecutor@74a20de4[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 1]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2055)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:825)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1355)
+	at scala.concurrent.impl.ExecutionContextImpl$$anon$4.execute(ExecutionContextImpl.scala:138)
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:72)
+	at scala.concurrent.impl.Promise$DefaultPromise.$anonfun$tryComplete$1(Promise.scala:288)
+	at scala.concurrent.impl.Promise$DefaultPromise.$anonfun$tryComplete$1$adapted(Promise.scala:288)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:288)
+	at scala.concurrent.Promise.complete(Promise.scala:53)
+	at scala.concurrent.Promise.complete$(Promise.scala:52)
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:187)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+INFO  time: initialize in 0.45s
+WARN  no build tool detected in workspace '/home/asia/studia/scala - laboratoria'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab2/Vec.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab2/VecPrivate.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/fraction/Fraction.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/1-4/main.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/main.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab4/equals/main.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab4/main.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab4/case classes/main.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab4/enumeration/main.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab4/case classes/file1.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab3/utils/file1.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab2/Lab2Bean.scala
+WARN  no build target: /home/asia/studia/scala - laboratoria/lab2/Lab2.scala
+INFO  shutting down Metals
